@@ -1,0 +1,26 @@
+{
+  "name": "intershop-tests",
+  "version": "1.0.0",
+  "description": "Автотесты для Skillbox Intershop",
+  "main": "test.js",
+  "type": "module",
+  "scripts": {
+    "test:debug": "mocha --timeout 90000 --reporter spec",
+    "test:all": "mocha \"./Final project/**/*.js\" --timeout 60000",
+    "test:home": "mocha \"./Final project/Home Page/**/*.js\"",
+    "test:catalog": "mocha \"./Final project/Catalog/**/*.js\"",
+    "test:cart": "mocha \"./Final project/Cart/**/*.js\"",
+    "test:auth/reg": "mocha \"./Final project/Registration and Authorization/**/*.js\"",
+    "test:order": "mocha \"./Final project/Placing an order/**/*.js\""
+  },
+  "author": "Nikita QA",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "chai": "^5.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.0",
+    "selenium-webdriver": "^4.0.0"
+  }
+}
